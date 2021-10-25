@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przypominajka WTF</title>
+    
+    <!--czcionka nagłówka-->
+    <link href='http://fonts.googleapis.com/css?family=Akaya+Kanadaka&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+
+</head>
+
+<body>
+    <div class="box-primary">
+        <header class="header">
+            <button class="hamburger hamburger--js" aria-label="Open menu">MENU</button>
+            <nav class="navigation navigation--js">            
+                <a class="navigation__link" href="index.html"> Strona główna</a>
+                <a class="navigation__link" href="stylowanie.html">Stylowanie CSS</a>
+                <a class="navigation__link" href="javaScript.html">JavaScript</a> 
+                <a class="navigation__link" href="grid.html">Grid</a>                         
+            </nav>             
+        </header>
+        
+        <main class="main">
+
+
+            <header class="main__header" id="top">
+                <h1 class="main__heading main__heading--js" id="name">
+                Przypominajka WTF
+                </h1>
+                <button class="action--js">Zmień nagłówek</button>
+            </header>
+
+
+            <section>
+                <h2>Ważność (klasyfikacja) stylowania</h2>
+
+                <p>
+                    <strong> Klasywikacje stylowania można porównywać do klasyfikacji medalowej reprezentacji: </strong>
+                </p>
+                <p>Złoto- !important </p>
+                <p>Srebro- style=""</p>
+                <p>Brąz- #name (selektor klasy)</p>
+                <p>4 miejsce- .name (selektor id)</p>
+                <p>5 miejsce- element (np <i>h1{} </i> lub <i>body h1{}</i></p>
+                
+            </section>
+
+            <section>
+                <h3> Przykłady:</h3>
+                <figure class="photo">
+                    <figure class="photo-box">
+                        <img src="../assets/img/win1.JPG" alt="win1" /><br>
+                    </figure>
+                    <figure class="photo-box">
+                        <img src="../assets/img/win2.JPG" alt="win2" /><br>
+                    </figure>
+                    <figure class="photo-box">
+                        <img src="../assets/img/win3.JPG" alt="win3" /><br>
+                    </figure>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Listy-style</h2>
+                <div class="box1">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li><b>list-style:</b> </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item-none"> none</li>
+                                    <li class="list-item-square">square</li>
+                                    <li class="list-item-roman">upper-roman</li>
+                                    <li class="list-item-inne">I wiele innych (wyszukaj w necie)</li>
+                                </ul>                            
+                            </a>
+                        </div>                    
+                    </div>                                          
+                </div>
+            </section>
+
+            <section>  
+                <section>
+                    <h2>FLEXBOX</h2> 
+                    <a>Jest to system pozycjonowania elementów w osi X i Y </a>           
+                </section>
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li><b>display:</b> </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>flex</b></li>                            
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>                    
+                </div>     
+            </section> 
+
+            <section>  
+                <section>                
+                    <a>Pozycjonujemy nasze pudełka wewnątrz od której do której strony mają się układać </a>           
+                </section>
+                    <div class="flex-direction">
+                        <div class="box-inside">
+                            <div class="box-column-left">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li><b>flex-direction:</b> </li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="box-column-right">
+                                <a class="text-position-left">
+                                    <ul >
+                                        <li> row (domyślny)</li>
+                                        <li> <b>column</b></li> 
+                                        <li> row-reverse</li> 
+                                        <li> column-reverse</li>                             
+                                    </ul>                            
+                                </a>  
+                            </div>                      
+                        </div>                   
+                        <div class="box-inside">
+                            <div class="box-column-left">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li> <b>flex-direction:</b></li>
+                                    </ul>
+                                </a>
+                            </div>                    
+                            <div class="box-column-right">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li class="list-item-none"> <b>column</b></li>                                                       
+                                    </ul>                            
+                                </a>  
+                            </div>                      
+                        </div>  
+                    </div>                    
+                </section> 
+
+            <section>  
+                <section>                
+                    <a>Zawija nam boxy wewnątrz tak by mieściły się na ekranie od lewej do prawej, w górę i w dół </a>           
+                </section>
+                <div class="flex-wrap">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li><b>flex-wrap:</b> </li>
+                                </ul>
+                                </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b><u>wrap:</u></b>elementy wystające przechodzą do kolejnych linii.</li> 
+                                    <li> <b>nowrap:</b> każdy element dopasowuje się do pojedynczego wiersza.</li> 
+                                    <li> <b>wrap-reverse:</b> elementy wystające do kolejnych linii w odwrotnej kolejności.</li>                                                        
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div> 
+                        <div class="box-example"></div> 
+                        <div class="box-example"></div>
+                        <div class="box-example"></div>
+                        <div class="box-example"></div>
+                        <div class="box-example"></div>                                   
+                </div>     
+            </section> 
+
+            <section>  
+                <section>            
+                    <a>Skrótowy zapis Flex-direction oraz flex-wrap </a>
+                    <a>Jednoczesne zastosowanie własności flex-direction i flex-wrap występuje bardzo często, dlatego też utworzono własność skrótową flex-flow. Przyjmuje ona dwie wartości rozdzielone spacją.
+                        Na przykład: wpisując flex-flow: row wrap uzyskamy efekt ułożenia elementów w wierszu i zawijanie ich do kolejnych linii w przypadku gdy któryś wystawałby poza kontener.</a>           
+                </section>
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>flex-flow:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>row wrap</b></li> 
+                                    <li> <b>column wrap</b></li> 
+                                    <li> <b>itp</b></li>                            
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>   
+                </div>                
+            </section> 
+            <section> 
+                <section>                    
+                    <a>Służy do wyrównywania elementów kontenera
+                        elastycznego (flexbox), ta właściwość języka CSS wyrównuje elementy w poziomie</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>justify-content:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>flex-start:</b> elementy wyrównują się do lewej strony kontenera.</li>
+                                    <li> <b>flex-end:</b> elementy wyrównują się do prawej strony kontenera.</li> 
+                                    <li> <b>center:</b> elementy wyrównują się do środka kontenera.</li> 
+                                    <li> <b>space-between:</b> Elementy wyświetlają się na całej szerokości kontenera z równymi odstępami.</li>
+                                    <li> <b>space-around:</b> Każdy z elementów wyświetla się z taką samą ilością przestrzeni wokół. </li>                              
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>                   
+                    
+                </div>     
+            </section>  
+            <section> 
+                <section>                    
+                    <a>Ta właściwość CSS wyrównuje elementy w pionie</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>align-items:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>flex-start:</b> elementy wyrównują się do górnej krawędzi kontenera.</li>
+                                    <li> <b>flex-end:</b> elementy wyrównują się do dolnej strony kontenera.</li> 
+                                    <li> <b>center:</b> elementy zostaną wyśrodkowane w pionie.</li> 
+                                    <li> <b>space-between:</b> Elementy zostaną wyświetlone na linii odniesienia kontenera.</li>
+                                    <li> <b>space-around:</b> Elementy zostaną powiększone tak, aby wypełnić kontener. </li>                              
+                                </ul>                            
+                            </a>  
+                        </div>                                             
+                    </div>                                                         
+                </div>                    
+            </section> 
+            <section> 
+                <section>                    
+                    <a>Ta właściwość określa ona kierunek w jakim elementy są rozmieszczone w kontenerze</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>flex-direction:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>row:</b> Elementy zostaną rozmieszczone tak jak tekst.</li>
+                                    <li> <b>row-reverse:</b> Elementy zostaną rozmieszczone odwrotnie do kierunku tekstu.</li> 
+                                    <li> <b>column:</b> Elementy zostaną rozmieszczone od góry do dołu.</li> 
+                                    <li> <b>column-reverse:</b> Elementy zostaną rozmieszczone od dołu do góry.</li>                                                                  
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>                   
+                    
+                </div>     
+            </section>
+            <section> 
+                <section>                    
+                    <a>Czasami odwracanie wierszy i kolumn kontenera nie wystarcza. W takich przypadkach, 
+                        możemy zastosować własność order do pojedynczego elementu. Domyślnie elementy mają wartość 0, 
+                        ale przy pomocy tej własności możemy ustalić kolejność na dowolną dodatnią lub ujemną wartość.</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>order:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>1:</b> zamienia element B z elementem C po prawej stronie</li>
+                                    <li> <b>-1:</b> zamienia element B z elementem A po lewej stronie</li>                                                                         
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>                                       
+                </div>                 
+            </section>
+            <section> 
+                <section>                    
+                    <a>Następną własnością stosowaną wobec każdego elementu z osobna jest align-self. Przyjmuje ona wartości takie same jak align-items, ale ma zastosowanie tylko wobec konkretnego elementu.</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>align-self:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>flex-start:</b> elementy wyrównują się do górnej krawędzi kontenera.</li>
+                                    <li> <b>flex-end:</b> elementy wyrównują się do dolnej strony kontenera.</li> 
+                                    <li> <b>center:</b> elementy zostaną wyśrodkowane w pionie.</li> 
+                                    <li> <b>space-between:</b> Elementy zostaną wyświetlone na linii odniesienia kontenera.</li>
+                                    <li> <b>space-around:</b> Elementy zostaną powiększone tak, aby wypełnić kontener. </li>                              
+                                </ul>                            
+                            </a>  
+                        </div>                                             
+                    </div>                                                         
+                </div>                    
+            </section>
+            <section> 
+                <section>                    
+                    <a>Własność align-content pomoże ci ustalić odległość wierszy kontenera od siebie. Własność ta przyjmuje takie wartości:</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>align-content:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>flex-start:</b> Wiersze upychają u góry kontenera.</li>
+                                    <li> <b>flex-end:</b> Wiersze upychają się w dolnej części kontenera.</li> 
+                                    <li> <b>center:</b> Wiersze upychane są pośrodku kontenera.</li> 
+                                    <li> <b>space-between:</b> Wiersze wyświetlane są z równymi odstępami.</li>
+                                    <li> <b>space-around:</b> Wiersze wyświetlane są z równymi odstępami dookoła. </li> 
+                                    <li> <b>stretch:</b> Wiersze rozszerzają się tak, aby dopasować się do kontenera. </li>                             
+                                </ul>                            
+                            </a>  
+                        </div>                                             
+                    </div>                                                         
+                </div>                    
+            </section> 
+
+            <section>
+                <h2>Twotrzenie treści w CSS:</h2>   
+                <p>zażółć gąślą jaźń</p> 
+                
+                <h4 class="title">pseudoelemet</h4>
+                    <div class="box3">
+                        Głównie chodzi o to by uniknąć ciągłego kopiowanie powtarzalnych elementów/treści. </br>
+                        Treść/elementy tworzymy za pomocą <b>content:""</b> </br>
+                        Używamy tej własności używając pseudoelementów:</br>
+                        <b>element::<i>before</i></b> WYŚWIETLANA TREŚĆ <b>element::<i>after</i></b></br>
+                        Użyłem tego w nagłówku H4.                      
+                    </div>               
+            
+                <h4 class="title">pseudoklasa</h4>
+                    <div class="box3">
+                        Jest modyfikatorem danego elementu, którego działania wynika z innego działania. VII/2</br> 
+                        <b>hover</b>- czili najechanie myszką, po najechaniu myszką na element wykonuje się jakaś czynność/działanie. Przykład w linkach navigacji (navigation__link).</br>
+                        <b>visited</b>- Pokazuje elementu już wcześniej odwiedzone. Przykład w linkach navigacji (navigation__link).</br>
+                        <b>focus</b>- Gdy pole jest aktywne czyli zaznaczone tabulatorem bądź wypełniamy okno formularzu wykonuje się dane działenie na nim . Przykład w formularzu na głównej.</br>
+                    </div>                    
+                    <div class="flex-direction">
+                        <div class="box-inside">
+                            <div class="box-column-left">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li><b>selektor:</b> </li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="box-column-right">
+                                <a class="text-position-left">
+                                    <ul >
+                                        <li> hover</li>
+                                        <li> visited</b></li> 
+                                        <li> focus</li>                                                                    
+                                    </ul>                            
+                                </a>  
+                            </div>                      
+                        </div>              
+                    </div>
+                <h4 class="title">pseudoselektor :rot</h4>
+                <div class="box3">
+                              
+                </div>                       
+            </section>
+              
+        </main>
+
+
+        <footer>
+            Jest to stopka strony, kiedyś coś tu napiszę. <a href="#top"> Wróć na górę strony</a>
+        </footer>
+       
+    </div>
+
+</body>
+
+</html>

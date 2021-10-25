@@ -5,7 +5,12 @@ module.exports = {
   /* here you can define another js file */
   entry: {
     index: "./src/js/index.js",
-    another: "./src/js/another.js",
+    grid: "./src/js/grid.js",
+    stylowanie: "./src/js/stylowanie.js",
+    javaScript: "./src/js/index.js",
+   
+
+      
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -81,12 +86,27 @@ module.exports = {
       inject: true,
       chunks: ["index"],
       filename: "index.html",
+    }),   
+    new HtmlWebpackPlugin({
+      template: "./src/pages/grid.html",
+      inject: true,
+      chunks: ["grid"],
+      filename: "grid.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
+      template: "./src/pages/stylowanie.html",
       inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
+      chunks: ["stylowanie"],
+      filename: "stylowanie.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/javaScript.html",
+      inject: true,
+      chunks: ["javaScript"],
+      filename: "javaScript.html",
+    }),
+   
+    
+    
   ],
 };

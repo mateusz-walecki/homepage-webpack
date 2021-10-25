@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przypominajka WTF</title>
+    
+    <!--czcionka nagłówka-->
+    <link href='http://fonts.googleapis.com/css?family=Akaya+Kanadaka&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+
+</head>
+
+<body>
+    <div class="box-primary">
+
+        <header class="header">
+            <button class="hamburger hamburger--js" aria-label="Open menu">MENU</button>
+            <nav class="navigation navigation--js">            
+                <a class="navigation__link" href="index.html"> Strona główna</a>
+                <a class="navigation__link" href="stylowanie.html">Stylowanie CSS</a>
+                <a class="navigation__link" href="javaScript.html">JavaScript</a> 
+                <a class="navigation__link" href="grid.html">Grid</a>                         
+            </nav>              
+        </header>
+
+        <main class="main">
+            <header class="main__header">
+                <h1 id="top">Przypominajka WTF</h1>                
+            </header>
+
+            <section>
+                <h2>Wyrażenia logiczne</h2>                
+                    <p> &gt; lewa strona większa od prawej</p>
+                    <p> &lt; lewa strona mniejsza od prawej</p>
+                    <p> &gt;= lewa strona większa / równa od prawej</p>
+                    <p> &lt;= lewa strona mniejsza / równa od prawej</p>
+                    <p> == obie strony równe</p>
+                    <p> === obie strony równewne (sprawdza typeof)</p>
+                    <p> != obie strony różne</p>
+                    <p> !== obie strony różne (sprawdza typeof)</p>                           
+            </section>            
+            <section>
+                <h2>JS- wartości Falsy i Truthy  </h2>  
+                <h3>FALSY</h3>              
+                    <p> false</p>
+                    <p> 0</p>
+                    <p> ','',`` -pusty string</p>
+                    <p> null</p>
+                    <p> undefined</p>
+                    <p> NaN- not a number</p>  
+                <h3>TRUTHY</h3>              
+                    <p> 'Tekst'</p>
+                    <p> 12</p>
+                    <p> -4</p>
+                    <p> {}</p>
+                    <p> []</p>
+                    <p> true</p>      
+                    <p>itd.</p>  
+                <h3>Korzystanie z kilku warunków</h3>  
+                <h4>AND (&amp;&amp;) - wszystkie warunki muszą być true &amp;&amp;</h4>
+                    <p>if ((myVariable == 4) &amp;&amp; (otherVar !== 'test')) {&hellip;}</p> 
+                <h4>OR (&amp;&amp;) - przynajmniej jeden warunek ma być true || &amp;&amp;</h4>
+                    <p>if ((myVariable == 4) || (otherVar !== 'test')) {&hellip;}</p>  
+                <h4>NOT (&amp;&amp;) - odwraca wartość wyrażenia logicznego ! &amp;&amp;</h4>
+                    <p>if (<b>!</b>('JavaScript' == 'Java')) { // ten kod się wykona } {&hellip;}</p> 
+                    <p>!false => true</p>
+                    <p>!true => false</p>      
+                <h4>ELSE</h4>   
+                    <p>Pozwala na budowanie bloku kodu jeżeli wartość logiczna wyrażenia w if-ie będzie fałszem </p> 
+                    <p>if (myVariable == 4) {</p>
+                    <p>// wykonaj kod jeśli true</p>    
+                    <p>} else {</p>   
+                    <p>// wykonaj kod jeśli false</p>    
+                    <p>}</p>   
+                <h4>ELSE IF</h4>   
+                    <p>używamy go gdy warunek pierwszy nie wyjdzie (W innym przypadku) </p> 
+                    <p>if (myVariable == 4) {
+                    </p>
+                    <p>// wykonaj kod jeśli true</p>    
+                    <p>} else if (myVariable == 8) {</p>   
+                    <p>// wykonaj kod jeśli myVariable == 8</p>    
+                    <p>}</p>  
+                <h4>SWITCH</h4>   
+                    <p>używamy go podobnie do if-a </p> 
+
+                    <p>const myNumber = {name: 'maciek'</p>
+                    <p>switch (myVariable) { </p>
+                    <p> case 4:</p>    
+                    <p> console.log('hi 4');</p>   
+                    <p>break</p>    
+                    <p> case 8:</p>    
+                    <p> console.log('hi 8');</p>   
+                    <p>break</p>
+                    <p> default</p>    
+                    <p> console.log('default response');</p>   
+                    <p>}</p>   
+                                            
+            </section>
+            <section>
+                <h2>Eventy</h2>                
+                    <h3>mouse events</h3>              
+                        <p> click</p>
+                        <p> mouseenter</p>
+                        <p> mouseleave</p>
+                        <p> mouseover</p>
+                                                 
+            </section>
+        
+    
+
+
+
+
+        </main>
+
+        
+    </div>
+
+</body>
+</html>

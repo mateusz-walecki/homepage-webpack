@@ -1,0 +1,19 @@
+.navigation {
+    padding: 16px;
+    display: none;
+    margin: 0 0 20px;
+    &__link {
+        color: #92140c;
+        display: block;
+        margin: 0 0 16px;
+    }
+    &__link:hover{
+    color: tomato;
+    }
+    &__link:visited{
+        color: gray;
+    }
+    &--open {
+        display: block;
+        }
+  }

@@ -1,0 +1,107 @@
+@import "~normalize.css";
+@import "_variables";
+@import"modules/navigation.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,100;1,400;1,700&display=swap');
+
+body{
+    background: #92ce92;
+    color: #333;
+}
+head {
+    font-family: 'Noto Serif Display', serif;
+  }
+.grid{
+    display: grid;
+}
+
+.main__header{
+    max-width: 1600px;
+    margin: 60px auto 0;  
+}
+  
+.navigation {
+    padding: 16px;
+    display: none;
+    margin: 0 0 20px;    
+}
+  
+.navigation__link {
+    color: #92140c;
+    display: block;
+    margin: 0 0 16px;
+}
+  
+.navigation--open{
+    display: block;
+}
+  
+.hamburger{
+    position: absolute;
+    top: 19px;
+    right: 25px;
+    border: none;
+    background: none;
+}
+
+.header{
+    background: tomato;    
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.article{
+    background: tomato;
+    grid-area: article;
+}
+.aside{
+    background: tomato;
+    grid-area: aside;
+    
+}
+
+.footer{
+    background: tomato;
+    grid-area: footer;
+}
+@media screen and (min-width: 600px) {
+    body{
+        background: #92ce92;
+        color: #333;
+    }
+    .main{
+        display: grid;
+        grid-template-areas: "header header header" 
+        "article . aside"
+        "footer footer footer"
+        ; /*ustawiamy w ile kolumn ma być w wiwrszu*/
+        grid-template-columns: 1fr 64px 200px;
+        column-gap: 16px;
+        row-gap: 16px;        
+    }
+    .footer{
+        background: tomato;
+        grid-area: footer;
+    }
+
+}
+@media (min-width: 768px) {
+    .navigation{
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-around;
+      height: 100px;
+      align-items: center;
+      margin: 0 0 20px;
+    }
+    .main__header{
+      padding: 60px;
+    }
+    .header__navigation{
+      background: #fff;           
+      top: 0;
+      width: 100%;
+    }
+    .hamburger{
+      display: none;
+    }
+  }
