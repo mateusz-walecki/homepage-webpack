@@ -1,7 +1,7 @@
 @import "~normalize.css";
 @import "_variables";
 @import"modules/navigation.scss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,100;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@568;700&family=Lobster&family=Noto+Serif+Display:ital,wght@1,100;1,400;1,700&display=swap');
 html {
     box-sizing: border-box;
   }
@@ -153,8 +153,7 @@ html {
     width: 100%;
     margin: 0%;
     &img {
-      display: block;
-    
+      display: block;    
       max-width: 100%;
     }
   }

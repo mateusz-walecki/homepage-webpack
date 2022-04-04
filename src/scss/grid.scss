@@ -33,6 +33,8 @@ head {
   
 .navigation--open{
     display: block;
+    background: tomato;
+    color: black;
 }
   
 .hamburger{
@@ -69,7 +71,9 @@ head {
     }
     .main{
         display: grid;
-        grid-template-areas: "header header header" 
+        grid-template-areas: 
+        "header__navigation header__navigation header__navigation"
+        "header header header" 
         "article . aside"
         "footer footer footer"
         ; /*ustawiamy w ile kolumn ma być w wiwrszu*/
@@ -84,6 +88,14 @@ head {
 
 }
 @media (min-width: 768px) {
+    .header__navigation{        
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background: #fff; 
+    }
+    .hamburger{
+        display: grid;
+      }
     .navigation{
       padding: 16px;
       border-radius: 8px;
@@ -92,16 +104,6 @@ head {
       height: 100px;
       align-items: center;
       margin: 0 0 20px;
-    }
-    .main__header{
-      padding: 60px;
-    }
-    .header__navigation{
-      background: #fff;           
-      top: 0;
-      width: 100%;
-    }
-    .hamburger{
-      display: none;
-    }
+    }  
+        
   }

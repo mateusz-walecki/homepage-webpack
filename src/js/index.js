@@ -1,5 +1,7 @@
 import '../scss/main.scss';
+
 import moment from 'moment';
+import '../js/javaTraining';
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -7,18 +9,18 @@ import moment from 'moment';
 
 /* place your code below */
 
-/*                                                 1   STAŁE                                                                                                 */
+/* 1   STAŁE                                                                                                 */
 const firstName = "Mateusz";
 const rocznik = 1992;
 const age = 32;
 
-/*                                                  2 pisze w konsoli                                                                                     */
+/*  2 pisze w konsoli                                                                                     */
 console.log(
   `Witam, mam na imie ${firstName} i urodziłem się w ${rocznik} roku, jestem tu bo ucze się frontendu :). `
 );
 
-/*                                               3 liczę z pomocą funkcji i wyswietlam w konsoli                                                          */
-/*                                               W tym przypadku podajemy wartość 7 mnożymy przez liczbę podaną w "calculate(2)" i otrzymujemy wynik w konsoli*/
+/*3 liczę z pomocą funkcji i wyswietlam w konsoli                                                          */
+/* W tym przypadku podajemy wartość 7 mnożymy przez liczbę podaną w "calculate(2)" i otrzymujemy wynik w konsoli*/
 
 function calculate(myNumber) {
   console.log(`Dostałem ${myNumber}`);
